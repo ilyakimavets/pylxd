@@ -124,7 +124,7 @@ To modify container's configuration method `save` should be called after
     >>> container = client.containers.get('my-container')
     >>> container.ephemeral = False
     >>> container.devices = { 'root': { 'path': '/', 'type': 'disk', 'size': '7GB'} }
-    >>> container.save
+    >>> container.save()
 
 
 Container Snapshots
